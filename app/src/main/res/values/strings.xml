@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ListBuzz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update_todo">Update your list</string>
+    <string name="add_todo_display_here">Lets add tasks, it will be displayed here!</string>
+    <string name="add_todo">Add new tasks!</string>
+    <string name="Fabforsavingtodo">FabforSavingTodo</string>
+    <string name="save_Todo">Save</string>
+    <string name="title">Add your Task here!</string>
+    <string name="select_date_for_todo">Select date</string>
+    <string name="select_time_for_todo">Set Time</string>
+    <string name="todoPriority">Set priority</string>
+    <string name="add_reminder">Do you want Reminder for this ?</string>
+    <string name="completed_todo">Todo Completed!!</string>
+    <string name="high">High</string>
+    <string name="error_msg_for_title_tinl">Please add title of your task</string>
+    <string name="date_error">Please select Date</string>
+    <string name="time_error">Please select Time</string>
+    <string name="delete_all">Delete All</string>
+    <string name="search">Search</string>
+    <string name="sort">Sort By</string>
+    <string name="sort_by_high_priority">Sort by High Priority</string>
+    <string name="sort_by_medium_priority">Sort by Medium Priority</string>
+    <string name="sort_by_low_priority">Sort by Low Priority</string>
+    <string name="dialog_title">Delete All Completed Todo?</string>
+    <string name="dialog_message">This action will delete all Completed ToDo.</string>
+    <string name="dialog_yes_button">Yes</string>
+    <string name="dialog_no_button">No</string>
+</resources>

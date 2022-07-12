@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom"/>
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/menu_sortBy"
+            android:title="@string/sort">
+            <menu>
+                <item android:id="@+id/sort_by_high_priority"
+                    android:title="@string/sort_by_high_priority"/>
+                <item android:id="@+id/sort_by_medium_priority"
+                    android:title="@string/sort_by_medium_priority"/>
+                <item android:id="@+id/sort_by_low_priority"
+                    android:title="@string/sort_by_low_priority"/>
+            </menu>
+        </item>
+
+    </group>
+    <item
+        android:id="@+id/completedToDoFragment"
+        android:title="@string/completed_todo"
+        app:showAsAction="never"/>
+
+</menu>

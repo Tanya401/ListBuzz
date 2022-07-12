@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/todoDisplayFragment">
+
+    <fragment
+        android:id="@+id/todoDisplayFragment"
+        android:name="com.example.listbuzz.ui.ViewModel.todoDisplayFragment"
+        android:label="ListBuzz"
+        tools:layout="@layout/fragment_todo_display" >
+        <action
+            android:id="@+id/action_todoDisplayFragment_to_addtodofragment3"
+            app:destination="@id/addtodofragment3" />
+        <action
+            android:id="@+id/action_todoDisplayFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addtodofragment3"
+        android:name="com.example.listbuzz.ui.ViewModel.addtodofragment"
+        android:label="Add your tasks!"
+        tools:layout="@layout/fragment_addtodofragment" />
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.listbuzz.ui.ViewModel.updateFragment"
+        android:label="@string/update_todo"
+        tools:layout="@layout/fragment_update"
+        >
+    <argument
+        android:name="currentTodo"
+        app:argType="com.example.listbuzz.data.ToDoModal"
+        app:nullable="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/deletedialog"
+        android:name="com.example.listbuzz.ui.ViewModel.DeleteDialog"
+        android:label="DeleteDialog"
+        />
+    <action android:id="@+id/action_global_deleteDialog2" app:destination="@id/deletedialog" />
+    <fragment
+        android:id="@+id/completedTodoFragment"
+        android:name="com.example.listbuzz.ui.ViewModel.completedTodoFragment"
+        android:label="fragment_completed_todo"
+        tools:layout="@layout/fragment_completed_todo" />
+</navigation>
